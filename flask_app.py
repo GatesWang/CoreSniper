@@ -12,7 +12,9 @@ def index():
         elif str(type) == "find by number of requirements":
             return redirect(url_for('number'))
 
-    return '''		<form method="post">
+    return '''
+                            <img src="static/rutgers.png" alt="Italian Trulli">
+                            <form method="post">
                             <input type="radio" name="type" value="find by requirement">find by requirement<br>
                             <input type="radio" name="type" value="find by number of requirements">find by number of requirements<br>
                             <input type="submit" value="GO!" value="got">
@@ -28,8 +30,16 @@ def number():
         else:
             return get_good_courses(int(number))
       return '''		<form method="post">
-                            <input type="text" name="number"> <br>
-                            <input type="submit" value="Find Courses">
+                            <select name="number">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                            </select>
+                            <input type="submit" value="Find Courses" value="got">
                         </form>
             '''
 
@@ -64,12 +74,19 @@ def find():
 
     return '''		<form method="post">
                             <input type="checkbox" name="requirement1"> requirement1<br>
+                            V1 : Contemporary Challenges [CC] <br><br>
                             <input type="checkbox" name="requirement2"> requirement2<br>
+                            V2 : Areas of Inquiry: Natural Sciences [NS] <br><br>
                             <input type="checkbox" name="requirement3"> requirement3<br>
+                            V3 : Areas of Inquiry: Social [SCL] and Historical [HST] Analysis<br><br>
                             <input type="checkbox" name="requirement4"> requirement4<br>
+                            V4 : Areas of Inquiry: Arts and Humanities [AHo], [AHp], [AHq], [AHr]<br><br>
                             <input type="checkbox" name="requirement5"> requirement5<br>
+                            V5 : Cognitive Skills and Processes: Writing and Communication [WC], [WCr], [WCd]<br><br>
                             <input type="checkbox" name="requirement6"> requirement6<br>
+                            V6 : Cognitive Skills and Processes: Quantitative and Formal Reasoning [QQ], [QR]<br><br>
                             <input type="checkbox" name="requirement7"> requirement7<br>
+                            V7 : Cognitive Skills and Processes: Information Technology and Research [ITR]<br><br>
                             <input type="submit" value="Find Courses">
                         </form>
             '''
