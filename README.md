@@ -1,6 +1,8 @@
 # CoreSniper
-# Try it out here:
+Try it out here:
 http://gateswang.pythonanywhere.com/
+
+To use the course sniper (not core sniper) selenium must be installed.  
 
 
 # Check out our rave reviews 
